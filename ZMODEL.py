@@ -23,8 +23,8 @@ from tqdm import tqdm  # tqdm 라이브러리 임포트
 tqdm.pandas()
 
 # Naver API 인증 정보
-client_id = "AQsXYKieKKmhXR2fyWfH"
-client_secret = "DjU1_8dPyy"
+client_id = "your_client_id"
+client_secret = "your_client_secret"
 
 
 ######################################################################custom_dict##################################################################
@@ -194,7 +194,7 @@ def run_lda():
 
         
         
-        requests.post("http://172.30.1.92:8000/update_results/", json={"results": topic_results})
+        requests.post("http://0.0.0.0:8000/update_results/", json={"results": topic_results})
         
 
 
