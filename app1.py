@@ -34,7 +34,7 @@ def run_script():
 
 if __name__ == "__main__":
     # FastAPI 서버를 별도의 스레드에서 실행
-    server_thread = Thread(target=uvicorn.run, args=(app,), kwargs={"host": "172.30.1.92", "port": 8000})
+    server_thread = Thread(target=uvicorn.run, args=(app,), kwargs={"host": "0.0.0.0", "port": 8000})
     server_thread.start()
 
     # 스크립트 실행
